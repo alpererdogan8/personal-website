@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { images } from "../next.config.js";
 
 const Badge = ({ src, alt }) => {
   return (
