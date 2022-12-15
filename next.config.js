@@ -14,15 +14,15 @@ const nextConfig = {
     };
   },
   staticPageGenerationTimeout: 240,
-  images: { domains: ["img.shields.io"] },
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       protocol: "https",
-  //       hostname: "img.shields.io",
-  //     },
-  //   ],
-  // },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.shields.io",
+        pathname: "/badge/**"
+      },
+    ],
+  },
   env: {
     NEXT_PUBLIC_NOTION_DATABASE_ID: process.env.NEXT_PUBLIC_NOTION_DATABASE_ID,
     NEXT_PUBLIC_NOTION_SECRET_KEY: process.env.NEXT_PUBLIC_NOTION_SECRET_KEY,
