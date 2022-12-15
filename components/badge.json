@@ -1,0 +1,38 @@
+[
+  {
+    "altName": "JavaScript",
+    "url": "https://img.shields.io/badge/-JavaScript/NodeJS-black?style=flat-square&logo=JavaScript"
+  },
+  {
+    "altName": "TypeScript",
+    "url": "https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=TypeScript"
+  },
+  {
+    "altName": "Express",
+    "url": "https://img.shields.io/badge/-Express-black?style=flat-square&logo=Express"
+  },
+  {
+    "altName": "MongoDB",
+    "url": "https://img.shields.io/badge/-MongoDB/Mongoose-black?style=flat-square&logo=mongodb"
+  },
+  {
+    "altName": "React",
+    "url": "https://img.shields.io/badge/-React/NextJS-black?style=flat-square&logo=React"
+  },
+  {
+    "altName": "Sass",
+    "url": "https://img.shields.io/badge/-Css-black?style=flat-square&logo=Sass"
+  },
+  {
+    "altName": "Python",
+    "url": "https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python"
+  },
+  {
+    "altName": "Docker",
+    "url": "https://img.shields.io/badge/-Docker-black?style=flat-square&logo=Docker"
+  },
+  {
+    "altName": "Figma",
+    "url": "https://img.shields.io/badge/-Figma-black?style=flat-square&logo=Figma"
+  }
+]

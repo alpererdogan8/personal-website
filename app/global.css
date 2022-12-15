@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply dark:bg-black dark:text-white transition-all duration-150 ease-linear;
+  }
+  header {
+    @apply text-[2.125rem] font-bold;
+  }
+  h1 {
+    @apply text-[2.5rem] font-black;
+  }
+  a {
+    @apply text-base
+    font-semibold
+    mr-[1.375rem]
+    ml-[22px]
+    px-1
+    md:ml-0;
+  }
+  img {
+    @apply drop-shadow-sm rounded-lg my-2 dark:border-black border-2;
+  }
+  #embedim-snow {
+    @apply bg-gray-400 dark:bg-white;
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-2 bg-none;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply w-2 bg-gray-700 dark:bg-gray-400 rounded-lg hover:bg-orange-600;
+  }
+}
