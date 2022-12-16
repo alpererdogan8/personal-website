@@ -87,6 +87,15 @@ const Header = ({ setTheme }) => {
           className={
             " transition-all duration-150 ease-linear  border-2 border-[#fff0] hover:border-gray-300 hover:dark:border-orange-600  rounded-lg hover:bg-[#e6e6e69a] dark:hover:bg-[#ea5a0c6b]"
           }
+          href="https://www.linkedin.com/in/alper-erdogan-13a009148/"
+          target="_blank"
+        >
+          LinkedIn
+        </Link>
+        <Link
+          className={
+            " transition-all duration-150 ease-linear  border-2 border-[#fff0] hover:border-gray-300 hover:dark:border-orange-600  rounded-lg hover:bg-[#e6e6e69a] dark:hover:bg-[#ea5a0c6b]"
+          }
           href="https://codepen.io/alpererdogan8"
           target="_blank"
         >
