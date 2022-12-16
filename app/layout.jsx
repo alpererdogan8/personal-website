@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <ThemeProvider>
       <html
         lang="en"
-        className={`${theme} font-sans tracking-[-4%] scrollbar `}
+        className={`${theme} font-sans tracking-[-4%] scrollbar selection:bg-orange-600 selection:text-white `}
       >
         <body className="grid  grid-cols-custom h-[100vh] align-middle">
           <main className="col-start-2 col-end-3 w-full flex flex-col justify-between h-[100vh]">
