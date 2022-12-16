@@ -29,13 +29,19 @@ export default function Home() {
         <article>
           <p className="font-semibold">
             My{" "}
-            <a className="underline ml-0 pl-1" href="https://www.linkedin.com/in/alper-erdogan-13a009148/">
+            <a
+              className="underline ml-0 pl-1 hover:text-orange-600"
+              href="https://www.linkedin.com/in/alper-erdogan-13a009148/"
+            >
               LinkedIn
             </a>
           </p>
           <p className="font-semibold">
             Mail me at{" "}
-            <a className="underline ml-0 pl-1" href="mailto:">
+            <a
+              className="underline ml-0 pl-1 hover:text-orange-600"
+              href="mailto:"
+            >
               alpererdogan8@gmail.com
             </a>
           </p>
@@ -43,7 +49,7 @@ export default function Home() {
             CV'ye bakmak istersen
             <a
               target="_blank"
-              className="underline ml-0 pl-1"
+              className="underline ml-0 pl-1 hover:text-orange-600"
               href="https://docs.google.com/document/d/1kG32fACDBuTjkRue5mQ0RHoAaLhoK8qSiUOt-_MktM8/edit#heading=h.jhv78pp9wtzd"
             >
               resume
@@ -53,7 +59,7 @@ export default function Home() {
             You can see my full
             <a
               target="_blank"
-              className="underline ml-0 pl-1"
+              className="underline ml-0 pl-1 hover:text-orange-600"
               href="https://docs.google.com/document/d/1GaBWl3GA0Jl1_ku1penYNUI3IXTmgwENboXFdam13bY/edit"
             >
               CV
