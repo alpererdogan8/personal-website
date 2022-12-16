@@ -15,11 +15,13 @@ const nextConfig = {
   },
   staticPageGenerationTimeout: 240,
   images: {
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: "https",
         hostname: "img.shields.io",
-        pathname: "/badge/**"
       },
     ],
   },

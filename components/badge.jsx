@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { images } from "../next.config.js";
+
+const LoaderPulse = () => {
+  return (
+    <div className=" animate-pulse dark:bg-gray-600  w-[131px] h-[25px] block border-[2px] bg-black  border-black rounded-[4px] drop-shadow-xl dark:border-white mr-2 mb-2 "></div>
+  );
+};
 
 const Badge = ({ src, alt }) => {
   return (
@@ -10,6 +15,7 @@ const Badge = ({ src, alt }) => {
         className="border-[2px] bg-black w-auto h-[25px] border-black rounded-[4px] drop-shadow-xl dark:border-white mr-2 mb-2 object-contain"
         src={src}
         alt={alt}
+        priority
       />
     </>
   );
