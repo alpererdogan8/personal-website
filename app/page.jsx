@@ -28,6 +28,12 @@ export default function Home() {
         <header className="text-[1.675rem]">Find Me</header>
         <article>
           <p className="font-semibold">
+            My{" "}
+            <a className="underline ml-0 pl-1" href="https://www.linkedin.com/in/alper-erdogan-13a009148/">
+              LinkedIn
+            </a>
+          </p>
+          <p className="font-semibold">
             Mail me at{" "}
             <a className="underline ml-0 pl-1" href="mailto:">
               alpererdogan8@gmail.com
