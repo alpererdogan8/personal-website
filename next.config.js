@@ -13,7 +13,7 @@ const nextConfig = {
 			'/blog/page': { page: '/blog' },
 		};
 	},
-	staticPageGenerationTimeout: 7200,
+	staticPageGenerationTimeout: 14400,
 	images: {
 		minimumCacheTTL: 60,
 		dangerouslyAllowSVG: true,
