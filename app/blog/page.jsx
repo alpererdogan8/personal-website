@@ -4,7 +4,7 @@ import React from 'react';
 
 async function getData() {
 	const data = await fetch('https://medium.com/feed/@alpererdogan8', {
-		cache: 'force-cache',
+		cache: 'no-store',
 		next: { revalidate: 7200 },
 	});
 	const response = await data.text();

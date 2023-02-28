@@ -16,7 +16,7 @@ async function getNotionDatabase() {
 		`https://api.notion.com/v1/databases/${process.env.NEXT_PUBLIC_NOTION_DATABASE_ID}/query`,
 		fetchOption,
 		{
-			cache: 'force-cache',
+			cache: 'no-store',
 			next: { revalidate: 7200 },
 		},
 	);
