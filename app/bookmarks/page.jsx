@@ -15,10 +15,6 @@ async function getNotionDatabase() {
 	const rawData = await fetch(
 		`https://api.notion.com/v1/databases/${process.env.NEXT_PUBLIC_NOTION_DATABASE_ID}/query`,
 		fetchOption,
-		{
-			cache: 'no-store',
-			next: { revalidate: 7200 },
-		},
 	);
 	const jsonData = await rawData.json();
 	const mappedData = [jsonData].map((item) => {

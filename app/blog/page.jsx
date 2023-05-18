@@ -3,10 +3,7 @@ import { xml2json } from 'xml-js';
 import React from 'react';
 
 async function getData() {
-	const data = await fetch('https://medium.com/feed/@alpererdogan8', {
-		cache: 'no-store',
-		next: { revalidate: 7200 },
-	});
+	const data = await fetch('https://medium.com/feed/@alpererdogan8');
 	const response = await data.text();
 	const convertString = xml2json(response, { compact: true, spaces: 2 });
 	const convertJSON = JSON.parse(convertString);
