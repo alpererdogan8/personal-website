@@ -40,8 +40,8 @@ export default function Home() {
             Mail me at{" "}
             <a
               className="underline ml-0 pl-1 hover:text-orange-600"
-              href="mailto:">
-              alpererdogan8@gmail.com
+              href="mailto:me@alpererdogan.dev">
+              me@alpererdogan.dev
             </a>
           </p>
           <p className="font-semibold">
