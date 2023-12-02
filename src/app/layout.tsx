@@ -26,11 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <main className="transition-all flex flex-col justify-center selection:bg-purple-500 selection:text-white  w-full max-w-2xl mx-auto px-8 sm:px-16 py-8 sm:py-12 ">
-            <div className="ml-5">
-              <Header />
-              <Navbar />
+            <Header />
+            <Navbar />
             {children}
-            </div>
           </main>
         </ThemeProvider>
       </body>
