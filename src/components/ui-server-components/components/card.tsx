@@ -7,6 +7,7 @@ import { format } from "date-fns";
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
+type FlagLanguage = keyof typeof Flag;
 export default function Card({ title, description, image, url, createdAt, language, stars }: MainCard) {
   return (
     <Link href={url}>
@@ -35,8 +36,8 @@ export default function Card({ title, description, image, url, createdAt, langua
                   <CircleIcon
                     className="mr-1 h-3 w-3"
                     style={{
-                      fill: Flag[`${language}`],
-                      color: Flag[`${language}`],
+                      fill: Flag[language as FlagLanguage],
+                      color: Flag[language as FlagLanguage],
                     }}
                   />
                   {language}
