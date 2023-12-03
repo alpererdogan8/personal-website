@@ -6,6 +6,7 @@ import Header from "@/components/ui-server-components/header/header";
 import Navbar from "@/components/ui-server-components/navbar/navbar";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Personal Website",
   description: "Alper's site",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Header />
             <Navbar />
             {children}
+            <Analytics />
           </main>
         </ThemeProvider>
       </body>
