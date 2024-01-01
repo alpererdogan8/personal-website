@@ -5,6 +5,9 @@ const getBookmarks = async () => {
     headers: {
       Authorization: `Bearer ${process.env.RAINDROP_ACCESS_TOKEN}`,
     },
+    next:{
+      revalidate: 21600
+    }
   });
   const data = await response.json();
   return [...data.items];
