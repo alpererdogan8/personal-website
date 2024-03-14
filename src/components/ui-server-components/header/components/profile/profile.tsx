@@ -3,10 +3,12 @@ import Link from "next/link";
 
 export default function Profile() {
   return (
-    <Link href="/" className="flex mt-5  flex-col">
-      <p className="font-bold text-xl drop-shadow-sm hover:drop-shadow-md">Æ{/* Alper Erdoğan */}</p>
+    <div>
+      <Link href="/" className="flex mt-5  flex-col">
+        <p className="font-bold text-xl drop-shadow-sm hover:drop-shadow-md">Æ{/* Alper Erdoğan */}</p>
+      </Link>
       <TooltipProvider>
-        <Tooltip>
+        <Tooltip delayDuration={100}>
           <TooltipTrigger>
             <div className="  flex gap-2 items-center justify-between">
               <p className=" font-normal text-[16.5px] whitespace-nowrap drop-shadow-sm">software developer</p>
@@ -22,6 +24,6 @@ export default function Profile() {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-    </Link>
+    </div>
   );
 }
