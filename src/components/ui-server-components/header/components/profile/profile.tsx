@@ -20,7 +20,7 @@ export default function Profile() {
             </div>
           </TooltipTrigger>
           <TooltipContent side="bottom" align="end">
-            <p className="font-mono text-[2px] ">Open to work</p>
+            <p className="font-mono text-[.9rem] ">Open to work</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
