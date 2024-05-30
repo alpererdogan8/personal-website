@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
-import "./globals.css";
-import { ThemeProvider } from "@/hooks/theme-provider";
 import Header from "@/components/ui-server-components/header/header";
 import Navbar from "@/components/ui-server-components/navbar/navbar";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { ThemeProvider } from "@/hooks/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import { GeistMono } from "geist/font/mono";
+import { GeistSans } from "geist/font/sans";
+import "./globals.css";
 export const metadata: Metadata = {
   title: "Personal Website",
   description: "Alper's site",
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   // openGraph: {
   //   images: [{ url: "./LogoBlack.ico", width: 800, height: 600 }],
   // },
+  manifest: "/manifest.json",
+ 
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
