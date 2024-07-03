@@ -1,14 +1,17 @@
-import Card from "@/components/ui-server-components/components/card";
+import Card from '@/components/ui-server-components/components/card';
 
 const getBookmarks = async () => {
-  const response = await fetch(`https://api.raindrop.io/rest/v1/raindrops/39422051`, {
-    headers: {
-      Authorization: `Bearer ${process.env.RAINDROP_ACCESS_TOKEN}`,
+  const response = await fetch(
+    `https://api.raindrop.io/rest/v1/raindrops/39422051`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.RAINDROP_ACCESS_TOKEN}`,
+      },
+      next: {
+        revalidate: 21600,
+      },
     },
-    next:{
-      revalidate: 21600
-    }
-  });
+  );
   const data = await response.json();
   return [...data.items];
 };

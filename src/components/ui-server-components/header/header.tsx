@@ -1,6 +1,6 @@
-import { ThemeButton } from "@/components/ui-client-components/theme-button";
-import Profile from "./components/profile/profile";
-import SocialMedia from "./components/social/social-media-group";
+import { ThemeButton } from '@/components/ui-client-components/theme-button';
+import Profile from './components/profile/profile';
+import SocialMedia from './components/social/social-media-group';
 
 export default function Header() {
   return (

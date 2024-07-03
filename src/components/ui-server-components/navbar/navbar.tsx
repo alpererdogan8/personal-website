@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -7,19 +7,22 @@ export default function Navbar() {
       <Button
         size="default"
         variant="link"
-        className=" underline-offset-8 scroll-m-20 px-0 font-semibold text-lg sm:text-lg ">
+        className=" underline-offset-8 scroll-m-20 px-0 font-semibold text-lg sm:text-lg "
+      >
         <Link href="/">projects</Link>
       </Button>
       <Button
         size="default"
         variant="link"
-        className=" underline-offset-8 scroll-m-20 px-0 font-semibold text-lg sm:text-lg ">
+        className=" underline-offset-8 scroll-m-20 px-0 font-semibold text-lg sm:text-lg "
+      >
         <Link href="/blog">medium</Link>
       </Button>
       <Button
         size="default"
         variant="link"
-        className=" underline-offset-8 scroll-m-20 px-0 font-semibold text-lg sm:text-lg ">
+        className=" underline-offset-8 scroll-m-20 px-0 font-semibold text-lg sm:text-lg "
+      >
         <Link href="/bookmarks">bookmarks</Link>
       </Button>
     </div>

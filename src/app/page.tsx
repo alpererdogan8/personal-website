@@ -1,12 +1,12 @@
-import LoadingCard from "@/components/ui-server-components/components/loading-card";
-import Card from "@/components/ui-server-components/components/card";
-import { GithubPinned } from "@/lib/types";
-import { ApolloClient, createHttpLink, InMemoryCache, gql } from "@apollo/client";
-import { setContext } from "@apollo/client/link/context";
-import { Suspense } from "react";
+import Card from '@/components/ui-server-components/components/card';
+import LoadingCard from '@/components/ui-server-components/components/loading-card';
+import { GithubPinned } from '@/lib/types';
+import { ApolloClient, createHttpLink, gql, InMemoryCache } from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+import { Suspense } from 'react';
 
 const httpLink = createHttpLink({
-  uri: "https://api.github.com/graphql",
+  uri: 'https://api.github.com/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -59,10 +59,10 @@ const getPinnedProjects = async (username: string) => {
   return pinnedItems;
 };
 export default async function Home() {
-  const data: GithubPinned = await getPinnedProjects("alpererdogan8");
+  const data: GithubPinned = await getPinnedProjects('alpererdogan8');
 
   return (
-    <main className="w-full flex  flex-col gap-6">
+    <main className="w-full flex flex-col gap-6">
       <Suspense fallback={<LoadingCard />}>
         {data &&
           data.map((item) => {
