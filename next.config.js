@@ -5,6 +5,7 @@ const withPWA = require('next-pwa')({
   register: true,
   skipWaiting: true,
 });
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -13,6 +14,19 @@ const nextConfig = {
         hostname: '*',
       },
     ],
+  },
+  async headers() {
+    return [
+      {
+        source: '/manifest.webmanifest',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/manifest+json',
+          },
+        ],
+      },
+    ];
   },
 };
 
