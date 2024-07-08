@@ -5,8 +5,7 @@ import { cookies } from 'next/headers';
 
 export async function GET(request: Request) {
   // Tema tercihini almak için cookieleri kontrol edebilirsiniz
-  // Bu örnekte varsayılan olarak 'dark' kullanıyoruz
-  const theme = cookies().get('theme')?.value; // veya request.cookies.get('theme')?.value ?? 'dark'
+  const theme = cookies().get('theme')?.value;
 
   const iconSizes = [72, 96, 120, 128, 144, 152, 180, 192, 384, 512];
 
