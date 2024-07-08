@@ -11,7 +11,7 @@ export async function GET(request: Request) {
   const userAgent = request.headers.get('user-agent') || '';
   const isAppleDevice = /iPhone|iPad|iPod|Macintosh/.test(userAgent);
   const manifest: Manifest = {
-    display: 'fullscreen',
+    display: 'standalone',
     scope: '/',
     start_url: '/',
     name: 'Alper Erdogan',
@@ -19,7 +19,6 @@ export async function GET(request: Request) {
     description: 'A Personal Website',
     icons: [
       ...iconSizes.map((size) => ({
-        //  devices os'a göre rel değiştirilmelidir
         rel: isAppleDevice ? 'apple-touch-icon' : 'icon',
         src: `/${theme}/logo-${size}.png`,
         sizes: `${size}x${size}`,
@@ -31,9 +30,7 @@ export async function GET(request: Request) {
         type: 'image/x-icon',
       },
     ],
-    // @ts-ignore
     theme_color: theme === 'dark' ? '#000000' : '#FFFFFF',
-    // @ts-ignore
     background_color: theme === 'dark' ? '#000000' : '#FFFFFF',
   };
 
