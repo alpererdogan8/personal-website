@@ -8,7 +8,7 @@ import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'Personal Website',
+  title: 'Alper Erdoğan',
   description: "Alper's site",
   icons: {
     icon: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   // openGraph: {
   //   images: [{ url: "./LogoBlack.ico", width: 800, height: 600 }],
   // },
-  manifest: '/manifest.json',
+  manifest: '/manifest.webmanifest',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
