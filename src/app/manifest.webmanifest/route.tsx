@@ -1,5 +1,6 @@
 // app/manifest.webmanifest/route.js
 
+import { Manifest } from 'next/dist/lib/metadata/types/manifest-types';
 import { cookies } from 'next/headers';
 
 export async function GET(request: Request) {
@@ -9,8 +10,8 @@ export async function GET(request: Request) {
 
   const iconSizes = [72, 96, 120, 128, 144, 152, 180, 192, 384, 512];
 
-  const manifest = {
-    display: 'fullscreen',
+  const manifest: Manifest = {
+    display: 'standalone',
     scope: '/',
     start_url: '/',
     name: 'Alper Erdogan',
