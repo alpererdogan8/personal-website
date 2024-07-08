@@ -8,7 +8,8 @@ export async function GET(request: Request) {
   const theme = cookies().get('theme')?.value;
 
   const iconSizes = [72, 96, 120, 128, 144, 152, 180, 192, 384, 512];
-
+  const userAgent = request.headers.get('user-agent') || '';
+  const isAppleDevice = /iPhone|iPad|iPod|Macintosh/.test(userAgent);
   const manifest: Manifest = {
     display: 'fullscreen',
     scope: '/',
@@ -18,6 +19,8 @@ export async function GET(request: Request) {
     description: 'A Personal Website',
     icons: [
       ...iconSizes.map((size) => ({
+        //  devices os'a göre rel değiştirilmelidir
+        rel: isAppleDevice ? 'apple-touch-icon' : 'icon',
         src: `/${theme}/logo-${size}.png`,
         sizes: `${size}x${size}`,
         type: 'image/png',
