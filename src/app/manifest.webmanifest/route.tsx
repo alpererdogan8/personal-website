@@ -11,7 +11,7 @@ export async function GET(request: Request) {
   const iconSizes = [72, 96, 120, 128, 144, 152, 180, 192, 384, 512];
 
   const manifest: Manifest = {
-    display: 'standalone',
+    display: 'fullscreen',
     scope: '/',
     start_url: '/',
     name: 'Alper Erdogan',
