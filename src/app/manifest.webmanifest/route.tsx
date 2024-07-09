@@ -1,5 +1,3 @@
-// app/manifest.webmanifest/route.js
-
 import { Manifest } from 'next/dist/lib/metadata/types/manifest-types';
 import { cookies } from 'next/headers';
 
