@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import Flag from 'flag-color-for-languages';
 import tailwindcssAnimate from 'tailwindcss-animate';
+/** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
   content: [
