@@ -7,22 +7,34 @@ import { Analytics } from '@vercel/analytics/react';
 import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from 'geist/font/sans';
 import './globals.css';
+
 export const metadata: Metadata = {
   title: 'Alper Erdoğan',
   description: "Alper's site",
-  icons: {
-    icon: {
-      url: '/logo-light.ico',
+  icons: [
+    {
+      rel: 'icon',
+      url: '/light/logo.ico',
       sizes: '64x64',
+      media: '(prefers-color-scheme: light)',
     },
-  },
+    {
+      rel: 'icon',
+      url: '/dark/logo.ico',
+      sizes: '64x64',
+      media: '(prefers-color-scheme: dark)',
+    },
+  ],
   // openGraph: {
   //   images: [{ url: "./LogoBlack.ico", width: 800, height: 600 }],
   // },
   manifest: '/manifest.webmanifest',
 };
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
