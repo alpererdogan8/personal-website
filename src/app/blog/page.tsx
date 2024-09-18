@@ -3,6 +3,10 @@ import { Suspense } from 'react';
 import { parseStringPromise } from 'xml2js';
 import Loading from './loading';
 
+export const fetchCache = "force-no-store";
+export const revalidate = 0; // seconds
+export const dynamic = "force-dynamic";
+
 const getMediumAPI = async (username: string): Promise<any> => {
   const response = await fetch(`https://medium.com/feed/@${username}`, {
     cache: 'no-cache',

@@ -1,5 +1,7 @@
 import Card from '@/components/ui-server-components/components/card';
-
+export const fetchCache = "force-no-store";
+export const revalidate = 0; // seconds
+export const dynamic = "force-dynamic";
 const getBookmarks = async () => {
   const response = await fetch(
     `https://api.raindrop.io/rest/v1/raindrops/39422051`,
@@ -8,7 +10,7 @@ const getBookmarks = async () => {
         Authorization: `Bearer ${process.env.RAINDROP_ACCESS_TOKEN}`,
       },
       next: {
-        revalidate: 21600,
+        revalidate: 0,
       },
     },
   );

@@ -5,6 +5,10 @@ import { ApolloClient, createHttpLink, gql, InMemoryCache } from '@apollo/client
 import { setContext } from '@apollo/client/link/context';
 import { Suspense } from 'react';
 
+export const fetchCache = "force-no-store";
+export const revalidate = 0; // seconds
+export const dynamic = "force-dynamic";
+
 const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
 });
