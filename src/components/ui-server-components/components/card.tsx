@@ -8,12 +8,10 @@ import {
 } from '@/components/ui/card';
 import { MainCard } from '@/lib/types';
 import { format } from 'date-fns';
-import Flag from 'flag-color-for-languages';
-import { CircleIcon, StarIcon } from 'lucide-react';
+import { StarIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type FlagLanguage = keyof typeof Flag;
 export default function Card({
   title,
   description,
@@ -54,16 +52,7 @@ export default function Card({
           <div className="flex space-x-4 text-sm text-muted-foreground">
             {language ? (
               <>
-                <div className="flex items-center">
-                  <CircleIcon
-                    className="mr-1 h-3 w-3"
-                    style={{
-                      fill: Flag[language as FlagLanguage],
-                      color: Flag[language as FlagLanguage],
-                    }}
-                  />
-                  {language}
-                </div>
+                <div className="flex items-center">{language}</div>
               </>
             ) : null}
             {stars ? (

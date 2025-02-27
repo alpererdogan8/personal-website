@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import Flag from 'flag-color-for-languages';
+
 import tailwindcssAnimate from 'tailwindcss-animate';
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -25,9 +25,6 @@ export default {
         mono: ['var(--font-geist-mono)'],
       },
       colors: {
-        ...Object.fromEntries(
-          Object.keys(Flag).map((item) => [item, Flag[item]]),
-        ),
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

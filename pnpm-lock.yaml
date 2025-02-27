@@ -41,9 +41,6 @@ importers:
       date-fns:
         specifier: ^2.30.0
         version: 2.30.0
-      flag-color-for-languages:
-        specifier: ^0.1.5
-        version: 0.1.5
       geist:
         specifier: ^1.1.0
         version: 1.3.0(next@14.2.15(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -2035,9 +2032,6 @@ packages:
   find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
-
-  flag-color-for-languages@0.1.5:
-    resolution: {integrity: sha512-DvdyAUdrTuH/kPTsWDHHu8PK+SKkAvSG9o5FAkXmv1XSZJ/m8y/yXDh1eRsllQ+igP2SW/XbbPnwDpB/y+psjg==}
 
   flat-cache@3.2.0:
     resolution: {integrity: sha512-CYcENa+FtcUKLmhhqyctpclsq7QF38pKjZHsGNiSQF5r4FtoKDWabFDl3hzaEQMvT1LHEysw5twgLvpYYb4vbw==}
@@ -5831,8 +5825,6 @@ snapshots:
     dependencies:
       locate-path: 6.0.0
       path-exists: 4.0.0
-
-  flag-color-for-languages@0.1.5: {}
 
   flat-cache@3.2.0:
     dependencies:
