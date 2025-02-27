@@ -1,13 +1,13 @@
-import Card from '@/components/ui-server-components/components/card';
-import LoadingCard from '@/components/ui-server-components/components/loading-card';
-import { GithubPinned } from '@/lib/types';
 import { ApolloClient, createHttpLink, gql, InMemoryCache } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { Suspense } from 'react';
+import Card from '../components/ui-server-components/components/card';
+import LoadingCard from '../components/ui-server-components/components/loading-card';
+import { GithubPinned } from '../lib/types';
 
-export const fetchCache = "force-no-store";
+export const fetchCache = 'force-no-store';
 export const revalidate = 0; // seconds
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
 
 const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
