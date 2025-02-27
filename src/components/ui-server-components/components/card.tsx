@@ -23,7 +23,7 @@ export default function Card({
 }: MainCard) {
   return (
     <Link href={url}>
-      <SCard className="w-full transition-all border-2  hover:drop-shadow-xl dark:hover:drop-shadow dark:hover:border-purple-700 ">
+      <SCard className="w-full transition-all border-2  hover:drop-shadow-xl dark:hover:drop-shadow-sm dark:hover:border-purple-700 ">
         {image ? (
           <>
             <AspectRatio ratio={16 / 9} className="bg-muted">

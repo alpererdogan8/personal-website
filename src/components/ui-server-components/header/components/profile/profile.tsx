@@ -13,7 +13,7 @@ export default function Profile() {
         <div className="px-2 py-1.5 rounded-lg hover:bg-accent">
           <TooltipTrigger>
             <Link href="/" className="flex justify-between ">
-              <p className="font-bold text-xl drop-shadow-sm hover:drop-shadow-md">
+              <p className="font-bold text-xl drop-shadow-xs hover:drop-shadow-md">
                 Æ{/* Alper Erdoğan */}
               </p>{' '}
               <div className="flex items-center justify-center mr-0.5">
@@ -23,7 +23,7 @@ export default function Profile() {
             </Link>
 
             <div className="flex gap-2 items-center justify-between">
-              <p className="font-normal text-[16.5px] whitespace-nowrap drop-shadow-sm">
+              <p className="font-normal text-[16.5px] whitespace-nowrap drop-shadow-xs">
                 software developer
               </p>
             </div>
